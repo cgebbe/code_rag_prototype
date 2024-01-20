@@ -1,0 +1,10 @@
+repos:
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.7.1
+    hooks:
+      - id: nbqa-black
+        args: []
+      - id: nbqa-isort
+        args: ["--float-to-top"]
+      - id: nbqa-ruff
+        args: ["--fix"]
